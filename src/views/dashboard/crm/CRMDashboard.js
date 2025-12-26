@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 import services from "../../../services/crm";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import { Link, useNavigate } from "react-router-dom";
 import CRMTable from "./components/CRMTable";
 

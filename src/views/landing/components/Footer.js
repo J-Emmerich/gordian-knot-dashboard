@@ -1,6 +1,6 @@
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const  FooterBox = styled('footer')(
     ({theme}) => `

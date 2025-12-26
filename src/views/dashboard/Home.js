@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -22,17 +22,6 @@ const Home = () => {
       <p>
         Este es un proyecto en desarrollo. Es una webapp para gestionar pequeñas
         empresas y equipos.
-      </p>
-      <p>
-        Esta hecho con MERN stack, en el front end utilizo Material UI como
-        libreria y Styled-Components para el estilo. El testing es con Jest,
-        utiliza Puppetter para el renderizado de pdf y react-beautiful-dnd para
-        la lista de tareas.
-      </p>
-      <p>
-        Lo creé para ayudar en la organización y gestión de la empresa que soy
-        co-fundador,{" "}
-        <a href="https://www.furmidablefamily.com">Furmidable Family</a>.
       </p>
       <p>
         Si quieres saber más contactame por{" "}

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import DeleteIcon from "@mui/icons-material/Delete";

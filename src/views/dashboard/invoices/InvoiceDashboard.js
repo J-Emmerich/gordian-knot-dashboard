@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Button from "@mui/material/Button";
 import services from "../../../services/invoice";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import InvoiceTable from "./components/InvoiceTable";
 import { useNavigate, Link } from "react-router-dom";

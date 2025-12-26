@@ -46,9 +46,9 @@ export default function LoginForm() {
 
   const submitLogin = async (data, e) => {
     e.preventDefault();
-    const { username, password } = data;
+    const { email, password } = data;
     try {
-      const user = await services.loginNewUser(username, password);
+      const user = await services.loginNewUser(email, password);
       login(user);
     } catch (error) {
       setOpen(true);
@@ -110,7 +110,7 @@ export default function LoginForm() {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Controller
-                name="username"
+                name="email"
                 control={control}
                 rules={{
                   required: "Campo requerido",
@@ -129,7 +129,7 @@ export default function LoginForm() {
                     error={!!error}
                     {...field}
                     variant="outlined"
-                    label="Nombre de usuario"
+                    label="Email"
                   ></TextField>
                 )}
               ></Controller>

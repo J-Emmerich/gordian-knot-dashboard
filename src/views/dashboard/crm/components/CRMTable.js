@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";

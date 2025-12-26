@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useForm, Controller, useFieldArray } from "react-hook-form";
 import Button from "@mui/material/Button";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import TextField from "@mui/material/TextField";
 import { useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 
-import DateAdapter from "@mui/lab/AdapterDayjs";
-import LocalizationProvider from "@mui/lab/LocalizationProvider";
-import MobileDatePicker from "@mui/lab/MobileDatePicker";
+import {LocalizationProvider} from "@mui/x-date-pickers";
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
 dayjs.extend(utc);
 
@@ -71,11 +71,7 @@ const StyledTextField = styled(TextField)`
   }
 `;
 
-const StyledDate = styled(MobileDatePicker)`
-  & input {
-    padding: 20px;
-  }
-`;
+
 const InvoiceForm = ({ onSubmit, isEditing, invoice }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const navigate = useNavigate();
@@ -190,8 +186,8 @@ const InvoiceForm = ({ onSubmit, isEditing, invoice }) => {
           </fieldset>
           <hr />
           <div>
-            <LocalizationProvider dateAdapter={DateAdapter}>
-              <StyledDate
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DesktopDatePicker
                 autoOk
                 inputVariant="standard"
                 variant="inline"
@@ -202,7 +198,7 @@ const InvoiceForm = ({ onSubmit, isEditing, invoice }) => {
                 value={selectedDate ? selectedDate : dayjs.utc()}
                 renderInput={(params) => <TextField {...params} />}
                 onChange={(date) => handleDateChange(date)}
-                KeyboardButtonProps={{
+                componentsProps={{
                   "aria-label": "change date"
                 }}
                 name="invoiceDate"

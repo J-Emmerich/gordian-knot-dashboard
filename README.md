@@ -11,6 +11,6 @@ https://github.com/j-emmerich/Gordian-Knot
 3. Any user can have any amount of projects users can invite other to their project and share files/data. #todo
 
 #
-The front-end uses React, React-Hook-Form, react-table, styled-components and Material-ui.
+The front-end uses React, React-Hook-Form, react-table, @emotion/styled and Material-ui.
 
 At the moment I'm not working on implementing new features. Just increansing it's stability and overall UX.  

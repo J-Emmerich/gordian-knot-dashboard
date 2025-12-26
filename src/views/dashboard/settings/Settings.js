@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import services from "../../../services/settings";
 
 const StyledTextField = styled(TextField)`

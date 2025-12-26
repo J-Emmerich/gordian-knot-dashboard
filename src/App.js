@@ -7,7 +7,7 @@ import ForgotPasswordForm from "./views/landing/components/ForgotPasswordForm"
 import ResetPasswordForm from "./views/landing/components/ResetPasswordForm"
 import DocumentPDF from "./views/pdf-page/DocumentPDF";
 import { UserProvider } from "./services/userContext";
-import { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "@emotion/react"
 import baseTheme from "./styles/theme";
 import Landing from "./views/landing/Landing";
 import RegisterForm from "./views/landing/components/RegisterForm";
@@ -30,6 +30,7 @@ const App = () => {
             <Layout />
             </PrivateRoute>
             } path="/app/*"  />
+         
           <Route element={<PrivateRoute>
             <DocumentPDF />
             </PrivateRoute>} path="/topdf/:id" />

@@ -43,6 +43,7 @@ export default function LoginForm() {
     const submitRegister = async (data, e) => {
       try {
         e.preventDefault();
+        console.log("is this running")
         const {username, password, email} = data;
         const user = await services.registerNewUser(username, password, email);
         login(user);

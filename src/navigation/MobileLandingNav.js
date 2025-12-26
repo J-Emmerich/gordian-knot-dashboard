@@ -11,7 +11,7 @@ import ClickAwayListener from "@mui/material/ClickAwayListener";
 import ChevronLeft from "@mui/icons-material/ChevronLeft"
 import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { scroller } from 'react-scroll';
 import { NavLink } from "react-router-dom";
 const StyledButton = styled(Button)`
