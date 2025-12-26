@@ -37,21 +37,7 @@ const handleClick = (event, index) =>{
   </ListItemButton>
     </ListItem>   
 
-<ListItem disableGutters>
-  <ListItemButton selected={selectedIndex === 2} onClick={(e)=>handleClick(e,2)} component={NavLink} to="clientes">
 
-  <ListItemIcon><PersonIcon /></ListItemIcon>
-   <ListItemText primary="Clientes"/>
-  </ListItemButton>
-    </ListItem>   
-
-<ListItem disableGutters>
-  <ListItemButton selected={selectedIndex === 3} onClick={(e)=>handleClick(e,3)} component={NavLink} to="ajustes">
-
-  <ListItemIcon><SettingsIcon /></ListItemIcon>
-   <ListItemText primary="Ajustes"/>
-  </ListItemButton>
-    </ListItem>   
       </List>
     </>
   );

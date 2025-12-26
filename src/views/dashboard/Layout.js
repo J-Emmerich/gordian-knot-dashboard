@@ -122,14 +122,7 @@ export default function Layout() {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
-              <MenuItem onClick={handleClose}>
-                <ListItemButton component={NavLink} to="ajustes">
-                  <ListItemIcon>
-                    <SettingsIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Ajustes" />
-                </ListItemButton>
-              </MenuItem>
+            
               <MenuItem>
                 <ListItemButton onClick={() => logout()}>
                   <ListItemIcon>
