@@ -6,7 +6,7 @@ const Header = () => {
       <div className="img-container">
         <img
           src={window.location.origin + "/logo-furmi.png"}
-          alt="todo Logo"
+          alt="Project Logo"
         ></img>
       </div>
       <div className="header-container">

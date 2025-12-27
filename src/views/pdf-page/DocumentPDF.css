@@ -67,6 +67,12 @@ hr {
   width: 130px;
 }
 
+.cust-details{
+    flex: 1;
+    padding: 0 10px;
+
+}
+
 .cust-details-container {
   display: flex;
   justify-content: space-between;
@@ -74,7 +80,7 @@ hr {
   gap: 50px;
 }
 .invoice-details {
-  flex-grow: 2;
+  flex: 1;
 }
 .invoice-details h2 {
   text-align: center;

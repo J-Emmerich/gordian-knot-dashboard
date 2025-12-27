@@ -144,7 +144,6 @@ const InvoiceForm = ({ onSubmit, isEditing, invoice }) => {
             <Controller
               name="clientName"
               control={control}
-              rules={{ required: "Campo requerido" }}
               render={({ field, fieldState: { error } }) => (
                 <StyledTextField
                   label="Nombre del cliente"
@@ -170,22 +169,31 @@ const InvoiceForm = ({ onSubmit, isEditing, invoice }) => {
                 ></StyledTextField>
               )}
             ></Controller>
+            
+            {/*
             <Controller
-              name="orderNumber"
-              control={control}
-              render={({ field, fieldState: { error } }) => (
-                <StyledTextField
-                  {...field}
-                  label="Número del pedido"
-                  variant="outlined"
-                  error={!!error}
-                  helperText={error ? error.message : null}
-                ></StyledTextField>
+            name="orderNumber"
+            control={control}
+            render={({ field, fieldState: { error } }) => (
+              <StyledTextField
+              {...field}
+              label="Número del pedido"
+              variant="outlined"
+              error={!!error}
+              helperText={error ? error.message : null}
+              ></StyledTextField>
               )}
-            ></Controller>
+              ></Controller>
+              */}
+              
           </fieldset>
           <hr />
+          <Title>
+ <p>Fecha de la factura</p>      
+   </Title>
+           
           <div>
+          
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DesktopDatePicker
                 autoOk

@@ -11,10 +11,14 @@ const CustDetails = ({ invoice }) => {
   return (
     <section className="cust-details-container">
       <div className="cust-details">
+      {clientName != null ?
+        <div>
         <h2>Factura en nombre de: </h2>
         <ul className="cust-details-items">
           <li>{clientName}</li>
         </ul>
+      </div>
+      : null}
       </div>
       <div className="invoice-details">
         <h2>Detalles</h2>

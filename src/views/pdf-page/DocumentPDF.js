@@ -41,12 +41,16 @@ setInvoice(invoiceData);
           <div className="pdf-content">
             <Header />
             <hr></hr>
-            {invoice !== null ? (
+            {invoice != null ? (
               <>
                 <CustDetails invoice={invoice} client={invoice.client} />
-                <Articles articles={invoice.articles} />
-                <hr></hr>
-                <Total invoice={invoice} />
+                </>) : null }
+            {invoice !== null ? (
+<>
+              <Articles articles={invoice.articles} />
+              <hr></hr>
+              <Total invoice={invoice} />
+            
               </>
             ) : null}
           </div>
